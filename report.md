@@ -42,3 +42,7 @@ A(m, n) =
     n + 1                 if m = 0 →         if (m == 0) {return n + 1;}
     A(m - 1, 1)           if m > 0 and n = 0 →        else if (n == 0) {return ackermann(m - 1, 1)};
     A(m - 1, A(m, n - 1)) if m > 0 and n > 0  →       else {return ackermann(m - 1, ackermann(m, n - 1))};
+    
+#測試與驗證
+![可愛貓咪](https://example.com/cat.jpg)
+![可愛貓咪](https://example.com/cat.jpg)
