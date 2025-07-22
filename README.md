@@ -19,7 +19,5 @@ int main() {
     std::cin >> a; 
     std::cout << "input B number: " << std::endl;
     std::cin >> b; 
-    std::cout << "Ackermann(A, B) = " << ackermann(a, b) << std::endl;
-
-    return 0;
+    std::cout << "Ackermann(A, B) = " << ackermann(a, b) << std::endl;return 0;
 }
