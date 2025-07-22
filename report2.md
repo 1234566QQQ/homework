@@ -93,7 +93,7 @@ Powerset
 
      原本的遞迴會產生這些結果
      
-     string S "aab"  
+     string S = "aab"  
      b  
      a  
      ab  
