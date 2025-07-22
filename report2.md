@@ -3,12 +3,28 @@
 PowerSet Function:
 ```cpp
 #include <iostream>
-#include <string>
 using namespace std;
+
+const int MAX = 1000;
+
+string results[MAX];
+int resultCount = 0;
+
+bool isDuplicate(string current) {
+    for (int i = 0; i < resultCount; ++i) {
+        if (results[i] == current) {
+            return true;
+        }
+    }
+    return false;
+}
 
 void powerSet(string S, int index, string current) {
     if (index == S.length()) {
-        cout << current << endl; 
+        if (!isDuplicate(current)) {
+            cout << current << endl;
+            results[resultCount++] = current;
+        }
         return;
     }
 
@@ -18,7 +34,19 @@ void powerSet(string S, int index, string current) {
 }
 
 int main() {
-    string S = "abc";
+   cout << "Input a string" << endl; 
+   std::string S; 
+   getline(cin, S);
+    for (int i = 0; i < S.length(); ++i) {
+        for (int j = i + 1; j < S.length(); ++j) {
+            if (S[i] > S[j]) {
+                char temp = S[i];
+                S[i] = S[j];
+                S[j] = temp;
+            }
+        }
+    }
+
     powerSet(S, 0, "");
     return 0;
 }
@@ -41,17 +69,16 @@ int main() {
 
 #解題說明
 
-遞迴公式轉換成code
-
-使用遞迴並配合一個字串 ( 或字元陣列 ) 紀錄可能組合：
+使用遞迴並配合一個字串紀錄可能組合
 
 Powerset
 
-   • 此函數會需要三個參數 S 、 index 與 current
+   • 此函數會需要三個參數 S 、 index 與 current, MAX
    • S 為一字串，表示 n 個元素的集合。 e.g. S = { a, b, c } 表示為“ abc”
    • index 是一整數索引值，同時也是當前遞迴深度 -1 。 0 ≤ index ≤ n
    • current 是當前遞迴記錄下的可能組合之一
-
+   • MAX 是最多組合數
+   
    在每一層遞迴中，你有兩個選擇：
 
      包含 S[index] 到 current 裡
@@ -60,6 +87,29 @@ Powerset
 
      當 index == S.length()，代表已經走到集合尾端，可以輸出一個完整的子集合了。
 
+     處理「重複組合」的問題。
+
+     舉例:
+
+     原本的遞迴會產生這些結果
+     
+     string S "aab"  
+     b  
+     a  
+     ab  
+     a  
+     ab  
+     aa  
+     aab= "aab";  出現重複組合
+     
+
+     先把 String裡面每個字元排序 方便尋找相同字元
+     
+     之後建立 Array results[] 存所有組合
+     
+     檢查字串是否已經存在於 results[] 中
+     
+     之後去除重複
 
     
     
