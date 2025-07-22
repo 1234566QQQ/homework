@@ -44,5 +44,5 @@ A(m, n) =
     A(m - 1, A(m, n - 1)) if m > 0 and n > 0  →       else {return ackermann(m - 1, ackermann(m, n - 1))};
     
 #測試與驗證
-![可愛貓咪](https://example.com/cat.jpg)
-![可愛貓咪](https://example.com/cat.jpg)
+![可愛貓咪](https://github.com/1234566QQQ/homework/blob/main/42%E6%9C%83%E7%88%86%E6%8E%89.png)
+![可愛貓咪](https://github.com/1234566QQQ/homework/blob/main/42%E6%9C%83%E7%88%86%E6%8E%89.png)
