@@ -1,46 +1,4 @@
-Skip to content
-Navigation Menu
-1234566QQQ
-homework
 
-Type / to search
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Commit b5ffea6
-1234566QQQ
-1234566QQQ
-authored
-7 minutes ago
-Verified
-Add files via upload
-main
-1 parent 
-be18dbd
- commit 
-b5ffea6
-File tree
-Filter files…
-report.md
-1 file changed
-+0
--55
-lines changed
-Search within code
- 
-‎report.md
--55
-Lines changed: 0 additions & 55 deletions
-
-
-Original file line number	Diff line number	Diff line change
-@@ -1,55 +0,0 @@
 # homework
 Ackermann Function:
 ```cpp
@@ -85,13 +43,3 @@ A(m - 1, A(m, n - 1)) if m > 0 and n > 0  →       else {return ackermann(m - 1
 Ackermann(1, 1) = 3
 Ackermann(4, 2)會爆掉
 使用的IDE: https://www.programiz.com/cpp-programming/online-compiler/
-0 commit comments
-Comments
-0
- (0)
-Comment
-You're not receiving notifications from this thread.
-
-Add files via upload · 1234566QQQ/homework@b5ffea6
-
-解釋
