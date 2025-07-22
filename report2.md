@@ -102,6 +102,7 @@ Powerset
      aa  
      aab= "aab";  出現重複組合
      
+     方法:
 
      先把 String裡面每個字元排序 方便尋找相同字元
      
