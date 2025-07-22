@@ -21,6 +21,7 @@ int main() {
     std::cin >> b; 
     std::cout << "Ackermann(A, B) = " << ackermann(a, b) << std::endl;return 0;
 }
+
 #時間複雜度（Theoretical）
 極快成長，例如：
 
