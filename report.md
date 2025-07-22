@@ -1,8 +1,50 @@
-# homework
-```cpp
-ackermann function 
-#include <iostream>
+Skip to content
+Navigation Menu
+1234566QQQ
+homework
 
+Type / to search
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+Commit b5ffea6
+1234566QQQ
+1234566QQQ
+authored
+7 minutes ago
+Verified
+Add files via upload
+main
+1 parent 
+be18dbd
+ commit 
+b5ffea6
+File tree
+Filter files…
+report.md
+1 file changed
++0
+-55
+lines changed
+Search within code
+ 
+‎report.md
+-55
+Lines changed: 0 additions & 55 deletions
+
+
+Original file line number	Diff line number	Diff line change
+@@ -1,55 +0,0 @@
+# homework
+Ackermann Function:
+```cpp
+#include <iostream>
 int ackermann(int m, int n) {
     if (m == 0) {
         return n + 1;
@@ -12,7 +54,6 @@ int ackermann(int m, int n) {
         return ackermann(m - 1, ackermann(m, n - 1));
     }
 }
-
 int main() {
     int a;
     int b;
@@ -25,19 +66,32 @@ int main() {
 ```
 #時間複雜度（Theoretical）
 極快成長，例如：
-
 A(1, n) = n + 2 → 線性 O(n)
-
 A(2, n) = 2n + 3 → 線性 O(n)
-
 A(3, n) = 2^(n+3) - 3 → 指數級 O(n^2)
-
 A(4, 1) ≈ 2^65536 - 3 → 無法實際計算
-
 #解題說明
-
 遞迴公式轉換成code
-A(m, n) =
-    n + 1                 if m = 0 →         if (m == 0) {return n + 1;}
-    A(m - 1, 1)           if m > 0 and n = 0 →        else if (n == 0) {return ackermann(m - 1, 1)};
-    A(m - 1, A(m, n - 1)) if m > 0 and n > 0  →       else {return ackermann(m - 1, ackermann(m, n - 1))};
+A(m, n) = n + 1                 if m = 0 →         if (m == 0) {return n + 1;}
+    
+A(m - 1, 1)           if m > 0 and n = 0 →        else if (n == 0) {return ackermann(m - 1, 1)};
+    
+A(m - 1, A(m, n - 1)) if m > 0 and n > 0  →       else {return ackermann(m - 1, ackermann(m, n - 1))};
+    
+    
+#測試與驗證
+![可愛貓咪](https://github.com/1234566QQQ/homework/blob/main/42%E6%9C%83%E7%88%86%E6%8E%89.png)
+![可愛貓咪](https://github.com/1234566QQQ/homework/blob/main/Ackermann(1%2C%201)%20%3D%203.png)
+Ackermann(1, 1) = 3
+Ackermann(4, 2)會爆掉
+使用的IDE: https://www.programiz.com/cpp-programming/online-compiler/
+0 commit comments
+Comments
+0
+ (0)
+Comment
+You're not receiving notifications from this thread.
+
+Add files via upload · 1234566QQQ/homework@b5ffea6
+
+解釋
