@@ -1,11 +1,10 @@
 #include <iostream>
 using namespace std;
 
-const int MAX = 1000
+const int MAX = 1000;
 
 string results[MAX];
 int resultCount = 0;
-
 
 bool isDuplicate(string current) {
     for (int i = 0; i < resultCount; ++i) {
@@ -25,17 +24,15 @@ void powerSet(string S, int index, string current) {
         return;
     }
 
-
     powerSet(S, index + 1, current);
-
 
     powerSet(S, index + 1, current + S[index]);
 }
 
 int main() {
-    string S = "aab";
-
-
+   cout << "Input a string" << endl; 
+   std::string S; 
+   getline(cin, S);
     for (int i = 0; i < S.length(); ++i) {
         for (int j = i + 1; j < S.length(); ++j) {
             if (S[i] > S[j]) {
@@ -49,6 +46,3 @@ int main() {
     powerSet(S, 0, "");
     return 0;
 }
-
-
-
