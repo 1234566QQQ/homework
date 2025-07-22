@@ -8,14 +8,12 @@ using namespace std;
 
 void powerSet(string S, int index, string current) {
     if (index == S.length()) {
-        cout << current << endl;  // 輸出目前的組合
+        cout << current << endl; 
         return;
     }
 
-    // 遞迴：不包含 S[index]
     powerSet(S, index + 1, current);
 
-    // 遞迴：包含 S[index]
     powerSet(S, index + 1, current + S[index]);
 }
 
