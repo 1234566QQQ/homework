@@ -47,6 +47,6 @@ A(m, n) =
 ![可愛貓咪](https://github.com/1234566QQQ/homework/blob/main/42%E6%9C%83%E7%88%86%E6%8E%89.png)
 ![可愛貓咪](https://github.com/1234566QQQ/homework/blob/main/Ackermann(1%2C%201)%20%3D%203.png)
 Ackermann(1, 1) = 3
-42會爆掉
+Ackermann(4, 2)會爆掉
 
 使用的IDE: https://www.programiz.com/cpp-programming/online-compiler/
