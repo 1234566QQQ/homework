@@ -38,8 +38,8 @@ A(4, 1) ≈ 2^65536 - 3 → 無法實際計算
 #解題說明
 
 遞迴公式轉換成code
-A(m, n) =
-    n + 1                 if m = 0 →         if (m == 0) {return n + 1;}
+
+A(m, n) = n + 1                 if m = 0 →         if (m == 0) {return n + 1;}
     
     A(m - 1, 1)           if m > 0 and n = 0 →        else if (n == 0) {return ackermann(m - 1, 1)};
     
