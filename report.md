@@ -25,6 +25,7 @@ int main() {
 #時間複雜度（Theoretical）
 
 極快成長，例如：
+
 A(1, n) = n + 2 → 線性 O(n)
 
 A(2, n) = 2n + 3 → 線性 O(n)
